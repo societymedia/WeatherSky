@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		EA31AE971D920571003E5D46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA31AE961D920571003E5D46 /* AppDelegate.swift */; };
-		EA31AE991D920571003E5D46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA31AE981D920571003E5D46 /* ViewController.swift */; };
+		EA31AE991D920571003E5D46 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA31AE981D920571003E5D46 /* InitialViewController.swift */; };
 		EA31AE9C1D920571003E5D46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA31AE9A1D920571003E5D46 /* Main.storyboard */; };
 		EA31AE9E1D920571003E5D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA31AE9D1D920571003E5D46 /* Assets.xcassets */; };
 		EA31AEA11D920571003E5D46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA31AE9F1D920571003E5D46 /* LaunchScreen.storyboard */; };
 		EA31AEAA1D921387003E5D46 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA31AEA91D921387003E5D46 /* MapKit.framework */; };
+		EA3275811D95B8D300F4058F /* DailyForcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3275801D95B8D300F4058F /* DailyForcastViewController.swift */; };
+		EA3275831D95B8F300F4058F /* ForcastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3275821D95B8F300F4058F /* ForcastTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA31AE931D920571003E5D46 /* WeatherSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA31AE961D920571003E5D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA31AE981D920571003E5D46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA31AE981D920571003E5D46 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		EA31AE9B1D920571003E5D46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA31AE9D1D920571003E5D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA31AEA01D920571003E5D46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA31AEA21D920571003E5D46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA31AEA91D921387003E5D46 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EA3275801D95B8D300F4058F /* DailyForcastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyForcastViewController.swift; sourceTree = "<group>"; };
+		EA3275821D95B8F300F4058F /* ForcastTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForcastTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +62,9 @@
 		EA31AE951D920571003E5D46 /* WeatherSky */ = {
 			isa = PBXGroup;
 			children = (
-				EA31AE961D920571003E5D46 /* AppDelegate.swift */,
-				EA31AE981D920571003E5D46 /* ViewController.swift */,
-				EA31AE9A1D920571003E5D46 /* Main.storyboard */,
-				EA31AE9D1D920571003E5D46 /* Assets.xcassets */,
-				EA31AE9F1D920571003E5D46 /* LaunchScreen.storyboard */,
-				EA31AEA21D920571003E5D46 /* Info.plist */,
+				EA32757F1D95B87900F4058F /* AppDelegate */,
+				EA32757E1D95B86F00F4058F /* Resources */,
+				EA32757D1D95B86500F4058F /* Source */,
 			);
 			path = WeatherSky;
 			sourceTree = "<group>";
@@ -74,6 +75,35 @@
 				EA31AEA91D921387003E5D46 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA32757D1D95B86500F4058F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EA31AE981D920571003E5D46 /* InitialViewController.swift */,
+				EA3275801D95B8D300F4058F /* DailyForcastViewController.swift */,
+				EA3275821D95B8F300F4058F /* ForcastTableViewController.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		EA32757E1D95B86F00F4058F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA31AEA21D920571003E5D46 /* Info.plist */,
+				EA31AE9F1D920571003E5D46 /* LaunchScreen.storyboard */,
+				EA31AE9D1D920571003E5D46 /* Assets.xcassets */,
+				EA31AE9A1D920571003E5D46 /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EA32757F1D95B87900F4058F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EA31AE961D920571003E5D46 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA31AE991D920571003E5D46 /* ViewController.swift in Sources */,
+				EA3275831D95B8F300F4058F /* ForcastTableViewController.swift in Sources */,
+				EA3275811D95B8D300F4058F /* DailyForcastViewController.swift in Sources */,
+				EA31AE991D920571003E5D46 /* InitialViewController.swift in Sources */,
 				EA31AE971D920571003E5D46 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +349,7 @@
 				EA31AEA71D920571003E5D46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
