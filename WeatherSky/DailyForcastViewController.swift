@@ -9,12 +9,17 @@
 import Foundation
 import UIKit
 
-class DailyForcastViewController: UIViewController, WillNeedForcastData {
-    var forcasts: Forcasts!
+class DailyForcastViewController: UIViewController, WillNeedCurrentForcastData {
+    var forcast: Forcast!
 
     
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
     override func viewDidLoad() {
         
-        print("View did load")
+    	self.dateLabel.text = self.forcast.dateString
+        self.temperatureLabel.text = String(self.forcast.temperature)
     }
+    
+    
 }

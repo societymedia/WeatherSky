@@ -15,6 +15,14 @@
 		EA31AEAA1D921387003E5D46 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA31AEA91D921387003E5D46 /* MapKit.framework */; };
 		EA3275811D95B8D300F4058F /* DailyForcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3275801D95B8D300F4058F /* DailyForcastViewController.swift */; };
 		EA3275831D95B8F300F4058F /* ForcastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3275821D95B8F300F4058F /* ForcastTableViewController.swift */; };
+		EAAA6D291DA3BCFB0048BB84 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA6D281DA3BCFB0048BB84 /* WeatherService.swift */; };
+		EAAA6D2B1DA3BD310048BB84 /* WeatherLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA6D2A1DA3BD310048BB84 /* WeatherLocationManager.swift */; };
+		EAAA6D2E1DA3BDAE0048BB84 /* WillNeedForcastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA6D2D1DA3BDAE0048BB84 /* WillNeedForcastData.swift */; };
+		EAAA6D311DA3BE580048BB84 /* ValueResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA6D301DA3BE580048BB84 /* ValueResult.swift */; };
+		EAAA6D331DA3BE720048BB84 /* Forcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA6D321DA3BE720048BB84 /* Forcast.swift */; };
+		EAAA6D351DA3BE9F0048BB84 /* WeatherServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA6D341DA3BE9F0048BB84 /* WeatherServiceResult.swift */; };
+		EAAA6D371DA3BEF70048BB84 /* Forcasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA6D361DA3BEF70048BB84 /* Forcasts.swift */; };
+		EAAA6D391DA3C61F0048BB84 /* ForcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA6D381DA3C61F0048BB84 /* ForcastTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,14 @@
 		EA31AEA91D921387003E5D46 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA3275801D95B8D300F4058F /* DailyForcastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyForcastViewController.swift; sourceTree = "<group>"; };
 		EA3275821D95B8F300F4058F /* ForcastTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForcastTableViewController.swift; sourceTree = "<group>"; };
+		EAAA6D281DA3BCFB0048BB84 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		EAAA6D2A1DA3BD310048BB84 /* WeatherLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherLocationManager.swift; sourceTree = "<group>"; };
+		EAAA6D2D1DA3BDAE0048BB84 /* WillNeedForcastData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WillNeedForcastData.swift; sourceTree = "<group>"; };
+		EAAA6D301DA3BE580048BB84 /* ValueResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueResult.swift; sourceTree = "<group>"; };
+		EAAA6D321DA3BE720048BB84 /* Forcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forcast.swift; sourceTree = "<group>"; };
+		EAAA6D341DA3BE9F0048BB84 /* WeatherServiceResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherServiceResult.swift; sourceTree = "<group>"; };
+		EAAA6D361DA3BEF70048BB84 /* Forcasts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forcasts.swift; sourceTree = "<group>"; };
+		EAAA6D381DA3C61F0048BB84 /* ForcastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForcastTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +96,13 @@
 		EA32757D1D95B86500F4058F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				EAAA6D2F1DA3BE460048BB84 /* Models */,
+				EAAA6D2C1DA3BD8A0048BB84 /* Protocols */,
+				EAAA6D271DA3BCE50048BB84 /* Services */,
 				EA31AE981D920571003E5D46 /* InitialViewController.swift */,
 				EA3275801D95B8D300F4058F /* DailyForcastViewController.swift */,
 				EA3275821D95B8F300F4058F /* ForcastTableViewController.swift */,
+				EAAA6D381DA3C61F0048BB84 /* ForcastTableViewCell.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -104,6 +124,34 @@
 				EA31AE961D920571003E5D46 /* AppDelegate.swift */,
 			);
 			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EAAA6D271DA3BCE50048BB84 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EAAA6D281DA3BCFB0048BB84 /* WeatherService.swift */,
+				EAAA6D2A1DA3BD310048BB84 /* WeatherLocationManager.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		EAAA6D2C1DA3BD8A0048BB84 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EAAA6D2D1DA3BDAE0048BB84 /* WillNeedForcastData.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		EAAA6D2F1DA3BE460048BB84 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EAAA6D301DA3BE580048BB84 /* ValueResult.swift */,
+				EAAA6D321DA3BE720048BB84 /* Forcast.swift */,
+				EAAA6D341DA3BE9F0048BB84 /* WeatherServiceResult.swift */,
+				EAAA6D361DA3BEF70048BB84 /* Forcasts.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +232,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAAA6D311DA3BE580048BB84 /* ValueResult.swift in Sources */,
+				EAAA6D291DA3BCFB0048BB84 /* WeatherService.swift in Sources */,
+				EAAA6D391DA3C61F0048BB84 /* ForcastTableViewCell.swift in Sources */,
+				EAAA6D2E1DA3BDAE0048BB84 /* WillNeedForcastData.swift in Sources */,
 				EA3275831D95B8F300F4058F /* ForcastTableViewController.swift in Sources */,
 				EA3275811D95B8D300F4058F /* DailyForcastViewController.swift in Sources */,
+				EAAA6D2B1DA3BD310048BB84 /* WeatherLocationManager.swift in Sources */,
+				EAAA6D331DA3BE720048BB84 /* Forcast.swift in Sources */,
+				EAAA6D351DA3BE9F0048BB84 /* WeatherServiceResult.swift in Sources */,
 				EA31AE991D920571003E5D46 /* InitialViewController.swift in Sources */,
 				EA31AE971D920571003E5D46 /* AppDelegate.swift in Sources */,
+				EAAA6D371DA3BEF70048BB84 /* Forcasts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,10 +365,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2A663M95MF;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = WeatherSky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.societymedia.WeatherSky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -322,10 +380,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2A663M95MF;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = WeatherSky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.societymedia.WeatherSky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
